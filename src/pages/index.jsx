@@ -4,7 +4,6 @@ import Image from "next/image";
 
 //Files in our project
 import iconList from "@/assets/images/icon-list.svg";
-import iconSuccess from "@/assets/images/icon-success.svg";
 import signUpDesktop from "@/assets/images/illustration-sign-up-desktop.svg";
 import signUpMobile from "@/assets/images/illustration-sign-up-mobile.svg";
 
@@ -64,7 +63,6 @@ export default function Home() {
           </div>
         </div>
 
-        {/* <Image src={iconSuccess} /> */}
         <Image
           className="hidden md:block"
           priority={true}

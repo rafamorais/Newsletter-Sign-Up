@@ -12,7 +12,7 @@
   }
 
   p {
-    @apply md:text-base text-sm  mb-1;
+    @apply md:text-base text-sm mb-1;
   }
 
   ul li {
