@@ -12,27 +12,32 @@ import signUpMobile from "@/assets/images/illustration-sign-up-mobile.svg";
 
 export default function Home() {
   return (
-    <main className="flex h-screen justify-center items-center bg-theme-charcoal-gray">
-      <div className="flex border rounded-3xl p-6 pl-0 bg-theme-white">
+    <main className="flex md:h-screen justify-center items-center bg-theme-charcoal-gray">
+      <div className="flex flex-col md:flex-row md:rounded-3xl md:p-6 md:pl-0 bg-theme-white">
+        <Image
+          className="md:hidden w-full object-top object-cover"
+          src={signUpMobile}
+          alt="screens pictures"
+        />
+
         <div className="flex items-center">
-          <div className="px-12">
-            <h1 className="mb-6">Stay updated!</h1>
+          <div className="md:px-12 px-4">
+            <h1 className="mb-6 mt-6 md:mt-0">Stay updated!</h1>
 
             <p className="">
-              Stay updated! Join 60,000+ product managers receiving monthly{" "}
-              updates on:
+              Join 60,000+ product managers receiving monthly updates on:
             </p>
 
             <ul className="my-4">
-              <li className="flex items-center gap-3 pb-3">
+              <li className="product-item md:pb-3">
                 <Image src={iconList} alt="checked icon" />
                 Product discovery and building what matters
               </li>
-              <li className="flex items-center gap-3 pb-3">
+              <li className="product-item md:pb-3">
                 <Image src={iconList} alt="checked icon" />
                 Measuring to ensure updates are a success
               </li>
-              <li className="flex items-center gap-3 pb-3">
+              <li className="product-item md:pb-3">
                 <Image src={iconList} alt="checked icon" />
                 And much more!
               </li>
@@ -51,7 +56,7 @@ export default function Home() {
               </div>
               <button
                 type="submit"
-                className="bg-theme-dark-slate-gray bg-gradient-to-r shadow-custom hover:from-pink-500 hover:shadow-2xl hover:to-theme-tomato mt-6 text-white p-3 w-full rounded"
+                className="bg-theme-dark-slate-gray bg-gradient-to-r shadow-custom hover:from-pink-500 hover:shadow-2xl hover:to-theme-tomato md:mt-6 mt-4 text-white p-3 w-full rounded"
               >
                 Subscribe to monthly newsletter
               </button>
@@ -60,8 +65,12 @@ export default function Home() {
         </div>
 
         {/* <Image src={iconSuccess} /> */}
-        <Image priority={true} src={signUpDesktop} alt="screens pictures" />
-        {/* <Image src={signUpMobile} /> */}
+        <Image
+          className="hidden md:block"
+          priority={true}
+          src={signUpDesktop}
+          alt="screens pictures"
+        />
 
         {/* <img src="/assets/images/illustration-sign-up-desktop.svg" /> */}
         {/* <img src="/assets/images/illustration-sign-up-mobile.svg" /> */}
