@@ -10,6 +10,9 @@ module.exports = {
       fontFamily: {
         roboto: ["Roboto", "sans-serif"],
       },
+      boxShadow: {
+        //custom: "10px 8px 10px 5px hsl(4, 100%, 67%)",
+      },
       colors: {
         "theme-tomato": "hsl(4, 100%, 67%)",
         "theme-dark-slate-gray": "hsl(234, 29%, 20%)",

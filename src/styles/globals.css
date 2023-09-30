@@ -4,11 +4,15 @@
 
 @layer base {
   body {
-    @apply font-roboto;
+    @apply font-roboto text-theme-dark-slate-gray;
+  }
+
+  h1 {
+    @apply text-5xl font-bold;
   }
 
   p {
-    @apply text-base;
+    @apply text-base mb-1;
   }
 
   /* ... */
