@@ -4,11 +4,7 @@ export default function Document() {
   return (
     <Html lang="en">
       <Head>
-        <link
-          rel="shortcut icon"
-          href={"/assets/images/favicon.svg"}
-          type="image/x-icon"
-        />
+        <link rel="shortcut icon" href={"favicon.png"} type="image/x-icon" />
 
         <link rel="preconnect" href="https://fonts.googleapis.com" />
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
