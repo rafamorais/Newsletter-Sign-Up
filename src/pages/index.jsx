@@ -1,13 +1,10 @@
 //Third party libraries
 import Image from "next/image";
-//Shared libraries
 
 //Files in our project
 import iconList from "@/assets/images/icon-list.svg";
 import signUpDesktop from "@/assets/images/illustration-sign-up-desktop.svg";
 import signUpMobile from "@/assets/images/illustration-sign-up-mobile.svg";
-
-//Relative imports
 
 export default function Home() {
   return (
@@ -20,12 +17,10 @@ export default function Home() {
         />
 
         <div className="flex items-center">
-          <div className="md:px-12 px-4">
+          <div className="md:px-12 px-4 max-w-[470px]">
             <h1 className="mb-6 mt-6 md:mt-0">Stay updated!</h1>
 
-            <p className="">
-              Join 60,000+ product managers receiving monthly updates on:
-            </p>
+            <p>Join 60,000+ product managers receiving monthly updates on:</p>
 
             <ul className="my-4">
               <li className="product-item md:pb-3">
@@ -69,9 +64,6 @@ export default function Home() {
           src={signUpDesktop}
           alt="screens pictures"
         />
-
-        {/* <img src="/assets/images/illustration-sign-up-desktop.svg" /> */}
-        {/* <img src="/assets/images/illustration-sign-up-mobile.svg" /> */}
       </div>
     </main>
   );
