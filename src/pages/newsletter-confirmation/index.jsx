@@ -1,8 +1,12 @@
+import { useSearchParams } from "next/navigation";
 import iconSuccess from "@/assets/images/icon-success.svg";
 import Image from "next/image";
 import Link from "next/link";
 
 const NewsletterConfirmation = () => {
+  const searchParams = useSearchParams();
+
+  const email = searchParams.get("email");
   return (
     <main className="flex bg-theme-charcoal-gray h-screen justify-center md:items-center">
       <div className="flex flex-col bg-white md:p-[5rem] p-4 md:w-[40vw] w-full md:rounded-3xl">
@@ -16,8 +20,8 @@ const NewsletterConfirmation = () => {
         </h1>
         <p className="py-6 text-base">
           A confirmation email has been sent to{" "}
-          <span className="font-bold">ash@loremcompany.com.</span> Please open
-          it and click the button inside to confirm your subscription.
+          <span className="font-bold">{email}</span> Please open it and click
+          the button inside to confirm your subscription.
         </p>
 
         <Link

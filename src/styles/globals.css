@@ -1,7 +1,6 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
-
 @layer base {
   body {
     @apply font-roboto text-theme-dark-slate-gray;
@@ -18,8 +17,6 @@
   ul li {
     @apply md:text-base text-sm  mb-1;
   }
-
-  /* ... */
 }
 
 @layer components {
