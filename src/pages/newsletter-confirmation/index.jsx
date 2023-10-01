@@ -2,7 +2,8 @@ import { useSearchParams } from "next/navigation";
 import iconSuccess from "@/assets/images/icon-success.svg";
 import Image from "next/image";
 import Link from "next/link";
-import Seo from "@/components/SubscribeForm/Seo";
+import Seo from "@/components/Seo";
+import Button from "@/components/Button";
 
 const NewsletterConfirmation = () => {
   const searchParams = useSearchParams();
@@ -30,12 +31,8 @@ const NewsletterConfirmation = () => {
             the button inside to confirm your subscription.
           </p>
 
-          <Link
-            href="/"
-            type="submit"
-            className="bg-theme-dark-slate-gray mt-auto bg-gradient-to-r text-center shadow-custom hover:from-pink-500 hover:shadow-2xl hover:to-theme-tomato text-white p-3 w-full rounded"
-          >
-            Dismiss message
+          <Link href="/">
+            <Button text="Dismiss message" />
           </Link>
         </div>
       </main>

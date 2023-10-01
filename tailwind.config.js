@@ -11,7 +11,7 @@ module.exports = {
         roboto: ["Roboto", "sans-serif"],
       },
       boxShadow: {
-        //custom: "10px 8px 10px 5px hsl(4, 100%, 67%)",
+        custom: "0px 16px 40px -6px hsl(4, 100%, 67%) ",
       },
       colors: {
         "theme-tomato": "hsl(4, 100%, 67%)",

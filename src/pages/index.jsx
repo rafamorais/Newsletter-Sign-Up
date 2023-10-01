@@ -6,7 +6,7 @@ import iconList from "@/assets/images/icon-list.svg";
 import signUpDesktop from "@/assets/images/illustration-sign-up-desktop.svg";
 import signUpMobile from "@/assets/images/illustration-sign-up-mobile.svg";
 import SubscribeForm from "@/components/SubscribeForm";
-import Seo from "@/components/SubscribeForm/Seo";
+import Seo from "@/components/Seo";
 
 export default function Home() {
   return (
